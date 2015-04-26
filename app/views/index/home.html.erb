@@ -1,0 +1,18 @@
+<center><!--<p id="logo"></p> --> 
+<h1>List of our latest tracks</h1>
+
+<p font=2> The we have <%= @music_count %> new album(s) </p> 
+
+<p font=2> Here is the list of new albums out </p></center>
+
+<center> <table border= 4 length= 50% width = 50%> 
+<th> Artist </th> <th> Album </th> <th> Released </th> <th> Price </th>
+ <% @music_list.each do |m| %>
+
+  <tr> <td> <%= m.Artist %> </td> <td> <%= m.Album %> </td> <td><%= m.Released %></td> <td> $<%= number_with_precision(m.Price, :precision => 2)%> </td></tr>
+    <% end %>
+</table></center>
+
+
+
+

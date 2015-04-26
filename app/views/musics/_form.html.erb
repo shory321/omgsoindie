@@ -1,0 +1,33 @@
+<%= form_for(@music) do |f| %>
+  <% if @music.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@music.errors.count, "error") %> prohibited this music from being saved:</h2>
+
+      <ul>
+      <% @music.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Artist %><br>
+    <%= f.text_field :Artist %>
+  </div>
+  <div class="field">
+    <%= f.label :Album %><br>
+    <%= f.text_field :Album %>
+  </div>
+  <div class="field">
+    <%= f.label :Released %><br>
+    <%= f.date_select :Released %>
+  </div>
+  <div class="field">
+    <%= f.label :Price %><br>
+    <%= f.text_field :Price %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
