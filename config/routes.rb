@@ -1,7 +1,15 @@
 Rails.application.routes.draw do
+  root  :to => "index#home"  # this will locate a page to be localhost:3000 default 
+
   get 'index/home'
 
+  get 'layouts/application'
+
+
   resources :musics
+
+
+  resources :toys
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
