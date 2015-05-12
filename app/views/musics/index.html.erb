@@ -9,6 +9,7 @@
       <th>Album</th>
       <th>Released</th>
       <th>Price</th>
+      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -20,6 +21,7 @@
         <td><%= music.Album %></td>
         <td><%= music.Released %></td>
         <td><%= music.Price %></td>
+        <td><%= music.image %></td>
         <td><%= link_to 'Show', music %></td>
         <td><%= link_to 'Edit', edit_music_path(music) %></td>
         <td><%= link_to 'Destroy', music, method: :delete, data: { confirm: 'Are you sure?' } %></td>
