@@ -1,2 +1,36 @@
-<h1>Showorders#ordersout</h1>
-<p>Find me in app/views/showorders/ordersout.html.erb</p>
+<center><h1>Place an Order</h1>
+<h1> Here are the orders for <%= @cust_last %></h1> 
+<br>
+<br>
+<br>
+ <center> 
+ <div id="table">
+<table width = 40% border= 1> 
+<thead> 
+	<tr>
+		<th> ID </th>
+		<th> Name </th>
+		<th> Artist </th>
+		<th> Album </th> 
+		<th> Price </th>
+		<th> Quantity </th>
+		<th> Total </th>
+		<!-- <th colspan="3"></th>-->
+	</tr>
+</thead>
+<tbody> 
+	<% @orderslist.each do |order| %>
+	<tr> 
+		<td><%= order.customerid %> </td>
+		<td> <%= order.name %></td>
+		<td> <%= order.artist %></td>
+		<td> <%= order.album %></td>
+		<td><%= order.price %></td>
+		<td><%= order.quantity %> </td>
+		<td> <%= order.total %> </td>
+
+	</tr>
+</div>
+
+<% end %> 
+<p>Find me in app/views/showorders/ordersout.html.erb</p></center>
