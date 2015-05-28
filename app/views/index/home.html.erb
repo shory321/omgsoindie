@@ -12,15 +12,13 @@
   <tr> <td> <%= m.Artist %> </td> <td> <%= m.Album %> </td> <td><%= m.Released %></td> <td> $<%= number_with_precision(m.Price, :precision => 2)%> </td></tr>
     <% end %>
 </table></center>
-
 <!-- Customers see's this -->
  
 <center><h3> Place an Order <h3><a href="http://localhost:3000/orders/new">Click Here</a></center> <!-- submits to orders controller -->
 
 
  <!-- Admin -->
- <h3> Update Music </h3> <a href="http://localhost:3000/musics"> Click Here </a>
- <h3> Update Customers </h3> <a href="http://localhost:3000/customers"> Click Here </a>
- <h3> Update Orders </h3> <a href="http://localhost:3000/orders"> Click Here </a>
+ <h3> Admins </h3> <a href="http://localhost:3000/index/admin"> Click Here </a>
+
 
 

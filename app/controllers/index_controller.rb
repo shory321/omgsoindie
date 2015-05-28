@@ -4,4 +4,7 @@ class IndexController < ApplicationController
   	@music_list = Music.all
  
   end
+
+  def admin
+  end
 end

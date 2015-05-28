@@ -4,7 +4,8 @@ Rails.application.routes.draw do
   root  :to => "index#home"  # this will locate a page to be localhost:3000 default 
 
   get 'index/home'
-
+  get 'index/admin'
+  get 'index/about'
   get 'layouts/application'
 
   
