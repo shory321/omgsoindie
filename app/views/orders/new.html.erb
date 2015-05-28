@@ -1,4 +1,11 @@
 <h1>New Order</h1>
+<div id = "float">
+	<ul>
+		<li><a href="http://localhost:3000/index/home"> Browse our selections </a></li>
+		<li><a href= "http://localhost:3000/index/about"> About</a></li>
+		<li><a href= "http://localhost:3000/index/admin"> Login </a></li>
+	</ul>
+</div>
 <center> <table border= 4 length= 50% width = 50%> 
 <th> Artist </th> <th> Album </th> <th> Released </th> <th> Price </th>
  <% @music_list.each do |m| %>
@@ -7,6 +14,8 @@
     <% end %>
 </table></center>
 
-<%= render 'form' %>
+<center><%= render 'form' %></center>
 
-<%= link_to 'Back', orders_path %>
+
+
+
