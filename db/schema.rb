@@ -11,7 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150512233947) do
+ActiveRecord::Schema.define(version: 20150530204232) do
+
+  create_table "adminpages", force: :cascade do |t|
+    t.string   "adminout"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "authusers", force: :cascade do |t|
+    t.string   "userid"
+    t.string   "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "musics", force: :cascade do |t|
     t.string   "Artist"

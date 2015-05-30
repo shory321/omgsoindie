@@ -1,0 +1,2 @@
+module SimpleloginHelper
+end

@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'adminpage/adminout'
+
+  resources :adminpages
+  resources :authusers
   get 'showorders/ordersout'
 
   root  :to => "index#home"  # this will locate a page to be localhost:3000 default 
@@ -8,6 +12,10 @@ Rails.application.routes.draw do
   get 'index/about'
   get 'layouts/application'
 
+  get 'adminpage/adminout'
+  get 'simplelogin/userin'
+  get 'simplelogin/mylogin'
+  post 'simplelogin/mylogin'
   
   resources :orders
   resources :musics

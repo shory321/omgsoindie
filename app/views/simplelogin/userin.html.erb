@@ -1,0 +1,24 @@
+<center><h2> You must be logged in to access the Maintenance Section of the System </h2> </center><br />
+<h3>Please enter the name of a Guide </h3>
+
+<%= form_tag(simplelogin_mylogin_path, :controller => "simplelogin", :action => "mylogin", :method => "post") do %>
+
+<div class="field">
+
+<%= label_tag :Userid_in %><br />
+
+<%= text_field_tag :userid_in %>
+</div>
+<div class="field">
+
+<%= label_tag :Password_in %><br />
+
+<%= text_field_tag :password_in %>
+</div>
+
+<div class="actions">
+
+<%= submit_tag "Submit for Authentication" %>
+</div>
+<% end %>
+<br /> <%= link_to "Return to Home Page ?", root_path %>
